@@ -1,0 +1,49 @@
+/* Ensure navbar links are white */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #dcdcdc;
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #dcdcdc;
+}
+
+/* Black background with white text */
+.black-background {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.black-background .form-control {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.black-background label {
+    color: #ffffff;
+}
+
+.black-background .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Dark gray button */
+.btn-dark-gray {
+    background-color: #4b4b4b;
+    color: #ffffff;
+    border-color: #4b4b4b;
+}
+
+.btn-dark-gray:hover {
+    background-color: #5c5c5c;
+    border-color: #5c5c5c;
+    color: #ffffff;
+}

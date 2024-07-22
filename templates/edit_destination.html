@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Destination{% endblock %}
+
+{% block content %}
+<div class="container mt-4 black-background p-4">
+    <h1>Edit Destination</h1>
+    <form method="POST">
+        <div class="form-group">
+            <label for="destination_name">Destination Name:</label>
+            <input type="text" class="form-control" id="destination_name" name="destination_name" value="{{ destination.destination_name }}" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" name="description" rows="5" required>{{ destination.description }}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="image_url">Image URL:</label>
+            <input type="text" class="form-control" id="image_url" name="image_url" value="{{ destination.image_url }}">
+        </div>
+        <div class="form-group">
+            <label for="score">Score:</label>
+            <input type="number" class="form-control" id="score" name="score" value="{{ destination.score }}" step="0.1" min="0" max="10" required>
+        </div>
+        <button type="submit" class="btn btn-dark-gray">Update Destination</button>
+    </form>
+</div>
+{% endblock %}
